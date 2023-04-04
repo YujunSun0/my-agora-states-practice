@@ -3,6 +3,7 @@ const app = express();
 
 const cors = require("cors");
 const morgan = require("morgan");
+const port = 3001;
 
 // TODO: cors를 적용합니다.
 app.use(cors());
@@ -23,9 +24,7 @@ app.get("/", (req, res) => {
 });
 
 const server = app.listen(port, () => {
-  console.log(
-    `[RUN] My Agora States Server... | http://fe-43-yujunsun0-s3.s3-website.ap-northeast-2.amazonaws.com/`
-  );
+  console.log(`[RUN] My Agora States Server... | localhost:${port}`);
 });
 
 module.exports.app = app;

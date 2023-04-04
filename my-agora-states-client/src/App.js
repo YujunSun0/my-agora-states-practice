@@ -2,8 +2,7 @@ import { Form, Discussions } from "./components";
 import { useEffect, useState } from "react";
 
 function App() {
-  const domain =
-    "http://fe-43-yujunsun0-s3.s3-website.ap-northeast-2.amazonaws.com/";
+  const domain = "http://localhost:3001";
   const [discussions, setDiscussions] = useState([]);
 
   useEffect(() => {
